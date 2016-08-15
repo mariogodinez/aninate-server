@@ -1,0 +1,23 @@
+{
+  "name": "iojs",
+  "version": "1.0.0",
+  "description": "A real time chat with iojs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "postinstall": "npm run build.js",
+    "build": "browserify client/app.js -o public/app.js"
+  },
+  "author": "Mario Godinez",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^13.1.0",
+    "course": "0.0.1",
+    "st": "^1.2.0",
+    "webrtc2images": "^1.4.4",
+    "xhr": "^2.2.2"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.0"
+  }
+}
